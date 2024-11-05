@@ -10,8 +10,12 @@ const guestList = document.querySelector(".guest-list");
 const guestCount = document.querySelector(".attendance");
 // alert when guest list is full (not yet visible)
 const guestFull = document.querySelector(".alert");
+// assign dish to a guest
+const assignButton = document.querySelector(".assign");
+// dish
+const assignedItems = document.querySelector(".assigned-items");
 
-addGuestButton.addEventListener("click", function (){
+addGuestButton.addEventListener("click", function () {
     const guest = guestInput.value;
    // console.log(guest);
    if (guest !== "") {
@@ -41,6 +45,24 @@ const updateGuestCount = function () {
         guestInputLabel.classList.add("hide");
         guestFull.classList.remove("hide");
     }
-}
+};
 
-                                   
+const assignItems = function () {
+    const potluckItems = [
+        "potstickers",
+        "fresh spring rolls",
+        "chicken satay",
+        "shrimp rangoons",
+        "fried tofu",
+        "fried rice",
+        "green curry",
+        "pad thai",
+        "thai basil stir fry",
+        "rice",
+        "mango sticky rice",
+        "thai iced tea"
+    ];
+
+};
+
+                                
